@@ -1,7 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  -var a='北京丨上海';
-  h1=a[0]+a[1]
-  p Welcome to #{title}
+  div.row(style='margin-top:500px')
+    .col-8
+      div.form-group 
+        input(type="text",class="form-control",placeholder="请输入你想要输入的内容")
+    .col-4
+      div.form-group 
+        button(type="submit",class="btn btn-primary") 确认
+   
